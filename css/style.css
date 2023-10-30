@@ -266,14 +266,16 @@ a:focus {
     margin: 0;
     color: #ffffff;
     font-size: 35px;
+    font-family: 'kumbh Sans';
     line-height: 0px;
-    font-weight: 700;
+    font-weight: 200;
     letter-spacing: 5px;
 }
 
 @media screen and (max-width: 600px) {
     .navbar .navbar-brand {
         font-size: 15px;
+        font-weight: 500;
     }
 }
 
@@ -329,6 +331,11 @@ a:focus {
         font-size: 16px;
         letter-spacing: 1px;
     }
+
+    .navbar .navbar-brand {
+        font-size: 15px;
+        font-weight: 500;
+    }
 }
 
 @media (max-width: 991.98px) {   
@@ -343,6 +350,11 @@ a:focus {
     
     .navbar .dropdown-menu {
         box-shadow: none;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 15px;
+        font-weight: 500;
     }
 }
 
@@ -488,6 +500,18 @@ a:focus {
         font-size: 15px;
         letter-spacing: 0;
     }
+
+    .carousel .carousel-img::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 17%;
+        background: rgba(0, 0, 0, .5);
+        z-index: 1;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -500,6 +524,18 @@ a:focus {
         font-size: 15px;
         letter-spacing: 0;
     }
+
+    .carousel .carousel-img::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 17%;
+        background: rgba(0, 0, 0, .5);
+        z-index: 1;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -511,6 +547,18 @@ a:focus {
         padding: 8px 20px;
         font-size: 14px;
         letter-spacing: 0;
+    }
+
+    .carousel .carousel-img::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 17%;
+        background: rgba(0, 0, 0, .5);
+        z-index: 1;
     }
 }
 
@@ -653,7 +701,6 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 45px 0;
 }
 
 .about .section-header {
@@ -701,6 +748,13 @@ a:focus {
     }
 }
 
+@media (max-width: 991.98px) {
+    .about .about-img {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
 
 /*******************************/
 /********* Service CSS *********/
@@ -735,10 +789,10 @@ a:focus {
 }
 
 .service .service-text {
-    position: absolute;
-    margin-top: 35px;
-    margin-left: 100px;
+    position: relative;
+    margin-left: 20px;
     padding-left: 20px;
+    margin-right: auto;
 }
 
 .service .service-text::before {
@@ -771,94 +825,6 @@ a:focus {
 .service .service-text p {
     margin: 0;
 }
-
-
-/*******************************/
-/********* Donate CSS **********/
-/*******************************/
-.donate {
-    position: relative;
-    width: 100%;
-    margin: 45px 0;
-    background: rgba(0, 0, 0, .5);
-}
-
-.donate .donate-content {
-    padding: 45px 0 15px 0;
-}
-
-.container .donate {
-    margin: 90px 0;
-}
-
-.container .donate .donate-content {
-    padding: 45px 30px 15px 30px;
-}
-
-.donate .donate-content .section-header {
-    margin-bottom: 30px;
-}
-
-.donate .donate-content .section-header h2 {
-    color: #ffffff;
-}
-
-.donate .donate-text p {
-    color: #ffffff;
-    font-size: 18px;
-}
-
-.donate .donate-form {
-    padding: 90px 30px;
-    background: #FDBE33;
-}
-
-.donate .donate-form .control-group {
-    margin-bottom: 15px;
-}
-
-.donate .donate-form .form-control {
-    height: 60px;
-    color: #ffffff;
-    padding: 0 15px;
-    border-radius: 0;
-    border: 1px solid #ffffff;
-    background: transparent;
-}
-
-.donate .donate-form .form-control::placeholder {
-    color: #ffffff;
-    opacity: 1;
-}
-
-.donate .donate-form .form-control:-ms-input-placeholder,
-.donate .donate-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
-}
-
-.donate .donate-form .btn-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.donate .donate-form .btn.btn-custom {
-    padding: 15px 0;
-    width: 100%;
-    height: 60px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    box-shadow: inset 0 0 0 0 #ffffff;
-}
-
-.donate .donate-form .btn.btn-custom:hover,
-.donate .donate-form .btn.btn-custom.active {
-    color: #FDBE33;
-    border: 1px solid #ffffff;
-    box-shadow: inset 0 0 0 30px #ffffff;
-}
-
-
 
 /*******************************/
 /********** Causes CSS *********/
@@ -1000,11 +966,11 @@ a:focus {
     display: flex;
     flex-direction: row;
     margin: 25px 0;
-
 }
 
 .facts .facts-item i {
     margin-top: 10px;
+    margin-left: 500px;
     font-size: 60px;
     line-height: 60px;
     color: #FDBE33;
@@ -1046,6 +1012,24 @@ a:focus {
     font-size: 22px;
     font-weight: 600;
     margin: 0;
+}
+
+@media (max-width: 991.98px) {
+    .facts .facts-item i {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .facts .facts-item i {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .facts .facts-item i {
+        margin-left: 100px;
+    }
 }
 
 
@@ -1212,127 +1196,6 @@ a:focus {
     box-shadow: inset 0 0 0 30px #ffffff;
 }
 
-
-/*******************************/
-/********** Event CSS **********/
-/*******************************/
-.event {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.event .event-item {
-    margin-bottom: 30px;
-    background: #f3f6ff;
-}
-
-.event .event-item img {
-    width: 100%;
-}
-
-.event .event-content {
-    padding: 30px;
-    display: flex;
-}
-
-.event .event-meta {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.event .event-meta p {
-    position: relative;
-    margin-bottom: 8px;
-    padding-bottom: 8px;
-    white-space: nowrap;
-    border-bottom: 1px solid rgba(0, 0, 0, .15);
-}
-
-.event .event-meta p:last-child {
-    border-bottom: none;
-}
-
-.event .event-meta i {
-    color: #4a4c70;
-    width: 25px;
-}
-
-.event .event-text {
-    position: relative;
-    margin-left: 20px;
-    padding-left: 20px;
-}
-
-.event .event-text::before {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: calc(100% - 5px);
-    top: 6px;
-    left: 0;
-    background: rgba(0, 0, 0, .15);
-}
-
-.event .event-text::after {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 40px;
-    top: calc(50% - 20px);
-    left: -1px;
-    background: #FDBE33;
-}
-
-.event .event-text h3 {
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.event .event-text p {
-    margin: 0;
-}
-
-.event .btn.btn-custom {
-    margin-top: 20px;
-    padding: 8px 30px;
-}
-
-@media (max-width: 575.98px) {
-    .event .event-content {
-        flex-direction: column;
-    }
-    
-    .event .event-meta {
-        flex-direction: row;
-    }
-    
-    .event .event-meta p {
-        font-size: 14px;
-        padding-right: 7px;
-    }
-    
-    .event .event-meta p:last-child {
-        border-bottom: 1px solid rgba(0, 0, 0, .15);
-    }
-    
-    .event .event-meta i {
-        width: 18px;
-    }
-    
-    .event .event-text {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .event .event-text::before,
-    .event .event-text::after {
-        display: none;
-    }
-}
-
 /*******************************/
 /********* Contact CSS *********/
 /*******************************/
@@ -1454,7 +1317,7 @@ a:focus {
 }
 
 .footer .footer-contact p i {
-    width: 25px;
+    width: 20px;
 }
 
 .footer .footer-social {
