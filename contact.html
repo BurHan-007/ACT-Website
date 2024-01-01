@@ -102,29 +102,31 @@
                     <img src="img/contact.JPG" alt="Image">
                 </div>
                 <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formsubmit.co/23411b7dd303304d57975e48990fd6ea" method="POST">
                             <div class="control-group">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <input type="text" class="form-control" id="name" name="Name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <input type="email" class="form-control" id="email" name="Email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" class="form-control" id="subject" name="Subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <textarea class="form-control" id="message" name="Message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
+                            <input type="hidden" name="_next" value="https://anuragcharitabletrust.org">
                             <div>
                                 <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
                             </div>
                         </form>
                     </div>
+                </div>
             </div>
         </div>
         <!-- Contact End -->
@@ -152,11 +154,8 @@
             </div>
             <div class="container copyright">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <p>&copy; <a href="#">Anurag Charitable Trust</a>, All Right Reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p>Designed By <a href="">BurHan</a></p>
                     </div>
                 </div>
             </div>
